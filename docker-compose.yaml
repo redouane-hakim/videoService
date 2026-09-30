@@ -1,0 +1,13 @@
+services:
+  video-service:
+    image: maven:3.9-eclipse-temurin-17
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - maven-cache:/root/.m2
+    ports:
+      - "8090:8090"
+    command: mvn spring-boot:run
+
+volumes:
+  maven-cache:

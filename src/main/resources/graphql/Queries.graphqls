@@ -1,0 +1,5 @@
+# Placeholder so the app can start (Spring for GraphQL needs one schema file).
+# Replace it in Part 2 (steps 14-15).
+type Query {
+    ping: String
+}
